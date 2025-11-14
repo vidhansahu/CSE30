@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and ID Selectors</title>
+    <style>
+        /* Element Selector */
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+
+        /* Class Selector */
+        .highlight {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* ID Selector */
+        #uniqueParagraph {
+            color: red;
+            font-style: italic;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a regular paragraph styled by the element selector.</p>
+    <p class="highlight">This paragraph has a class selector applied, overriding the element selector's color.</p>
+    <p id="uniqueParagraph" class="highlight">This paragraph has both an ID and a class, but the ID selector's styles take priority.</p>
+</body>
+</html>
+<!--observation-->
+ID selector takes priority than class selector and at last element Selector
